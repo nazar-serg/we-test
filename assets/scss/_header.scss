@@ -1,0 +1,16 @@
+.header {
+    padding: 52px 0;
+    border-bottom: 1px solid #737373;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        font-size: 36px;
+        line-height: 36px;
+        font-family: 'Newake', sans-serif;
+        letter-spacing: -2px;
+        text-transform: capitalize;
+    }
+}
