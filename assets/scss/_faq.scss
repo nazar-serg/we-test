@@ -1,4 +1,30 @@
 .faq {
+    position: relative;
+    padding-bottom: 200px;
+    &::before {
+        content: '';
+        position: absolute;
+        left: -309px;
+        bottom: 250px;
+        width: 449px;
+        height: 901px;
+        background-color: #0282A6;
+        opacity: 0.2;
+        border-radius: 50%;
+        filter: blur(201px);
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        right: -309px;
+        bottom: 0;
+        width: 449px;
+        height: 901px;
+        background-color: #0282A6;
+        opacity: 0.2;
+        border-radius: 50%;
+        filter: blur(201px);
+    }
     &__title {
         font-size: 64px;
         line-height: 76.8px;
@@ -7,5 +33,50 @@
         text-transform: uppercase;
         text-align: center;
         margin-bottom: 20px;
+    }
+
+    &__item {
+        box-shadow: 0 4px 20px 0 rgba(30, 30, 30, 0.04);
+        border-radius: 6px;
+        padding: 24px 40px;
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 0;
+        background-color: var(--light-grey-color);
+        cursor: pointer;
+        transition: background-color .3s;
+        font-size: 28px;
+        line-height: 33.6px;
+        font-weight: 600;
+        font-family: 'Inter', sans-serif;
+        max-width: 1219px;
+        &.active {
+            .arrow {
+                transform: rotate(-90deg);
+            }
+        }
+        &:hover {
+            background-color: var(--gray-color);
+        }
+    }
+    &__content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease;
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 400;
+        font-family: 'Inter', sans-serif;
+        max-width: 1219px;
+    }
+    .arrow {
+        font-size: 20px;
+        transition: transform 0.4s ease;    
     }
 }

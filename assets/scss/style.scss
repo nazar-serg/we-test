@@ -4,10 +4,22 @@
 @import "header";
 @import "hero";
 @import "faq";
+@import "banner";
+@import "footer";
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+}
+
+html, body {
+    height: 100%;
+}
 
 body {
     min-width: 320px;
     color: var(--text-color);
+    overflow-x: hidden;
 }
 
 .container {
@@ -15,4 +27,14 @@ body {
     margin: auto;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1;
 }

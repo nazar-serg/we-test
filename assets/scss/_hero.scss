@@ -33,8 +33,9 @@
         width: 397px;
         height: 450px;
         position: absolute;
-        bottom: -100px;
+        top: calc(50% + 40px);
         left: 0;
+        transform: translateY(-50%);
     }
     
     &__social {
@@ -43,6 +44,17 @@
         align-items: center;
         column-gap: 25px;
         margin-bottom: 40px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 92px;
+            transform: translate(0, -50%);
+            background: url(../../images/hero/wave.svg) no-repeat;
+            width: 267px;
+            height: 58px;
+        }
     }
     &__title {
         text-align: center;

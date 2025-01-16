@@ -1,0 +1,47 @@
+.banner {
+    margin-bottom: -90px!important;
+    &__body {
+        background-color: #0282A6;
+        border-radius: 15px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 180px;
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: url(../../images/banner/decor-left.svg) no-repeat;
+            width: 150px;
+            height: 125px;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: url(../../images/banner/decor-right.svg) no-repeat;
+            width: 150px;
+            height: 125px;
+        }
+    }
+    &__text {
+        font-family: 'Gotham', sans-serif;
+        font-size: 22px;
+        line-height: 22px;
+        font-weight: 700;
+        color: #fff;
+        letter-spacing: 0.01em;
+        padding-left: 298px;
+    }
+    &__image {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 281px;
+        height: 397px;
+        object-fit: contain;
+        z-index: 1;
+    }
+}

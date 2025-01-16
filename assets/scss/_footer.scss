@@ -1,0 +1,40 @@
+.footer {
+    background-color: #292929;
+    padding: 144px 0 47px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #E6E6E6;
+        padding-bottom: 28px;
+    }
+    &__logo {
+        font-family: 'Newake', sans-serif;
+        font-size: 64px;
+        line-height: 64px;
+        font-weight: 400;
+        letter-spacing: -3px;
+        text-transform: capitalize;
+        color: #fff;
+    }
+    &__menu {
+        ul {
+            display: flex;
+            align-items: center;
+            column-gap: 30px;
+            li {
+                a {
+                    font-family: 'Gotham', sans-serif;
+                    font-size: 20px;
+                    line-height: 20px;
+                    font-weight: 400;
+                    letter-spacing: 0.01em;
+                    color: #fff;
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+    }
+}
